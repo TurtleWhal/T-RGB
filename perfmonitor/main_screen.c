@@ -26,7 +26,6 @@ void ui_Main_screen_init(void)
     lv_obj_set_y(ui_Main_Label, 0);
     lv_obj_set_align(ui_Main_Label, LV_ALIGN_CENTER);
     lv_label_set_text(ui_Main_Label, "Main Label");
-    //lv_obj_set_style_text_color(ui_Main_Label, lv_color_black(), LV_PART_MAIN);
 
     lv_scr_load(ui_Main);
 }

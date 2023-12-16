@@ -442,8 +442,15 @@ void setup()
 
 void loop()
 {
+    static String msg;
     // put your main code here, to run repeatedly:
     delay(lv_timer_handler());
+
+    if (Serial.available())
+    {
+        msg = Serial.readString();
+        Serial.printf("Echoing: %s\n", msg);
+    }
 }
 
 void lcd_send_data(uint8_t data)

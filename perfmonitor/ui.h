@@ -13,9 +13,9 @@
 #include "lvgl.h"
 
 #ifdef __cplusplus
-extern "C" {
+extern "C"
+{
 #endif
-
 
     typedef struct
     {
@@ -26,13 +26,10 @@ extern "C" {
     const char *getTouchAddr();
 
     void ui_begin();
-    
+
     void ui_Main_screen_init(void);
     extern lv_obj_t *ui_Main;
     extern lv_obj_t *ui_Main_Label;
-
-
-
 
 #ifdef __cplusplus
 }
