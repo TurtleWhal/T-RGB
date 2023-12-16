@@ -436,8 +436,7 @@ void setup()
                                               true, LV_FONT_DEFAULT);
     lv_disp_set_theme(dispp, theme);
 
-    // ui_begin();
-    ui_Main_screen_init();
+    ui_begin();
 }
 
 void loop()
@@ -449,7 +448,8 @@ void loop()
     if (Serial.available())
     {
         msg = Serial.readString();
-        Serial.printf("Echoing: %s\n", msg);
+        //Serial.printf("Echoing: %s\n", msg);
+        parseJsonData(msg);
     }
 }
 

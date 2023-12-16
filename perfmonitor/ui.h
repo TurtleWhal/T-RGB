@@ -11,6 +11,7 @@
 
 #include "stdint.h"
 #include "lvgl.h"
+#include "Arduino.h"
 
 #ifdef __cplusplus
 extern "C"
@@ -26,10 +27,7 @@ extern "C"
     const char *getTouchAddr();
 
     void ui_begin();
-
-    void ui_Main_screen_init(void);
-    extern lv_obj_t *ui_Main;
-    extern lv_obj_t *ui_Main_Label;
+    void parseJsonData(String json);
 
 #ifdef __cplusplus
 }
